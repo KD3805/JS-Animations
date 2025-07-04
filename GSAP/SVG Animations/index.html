@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVG - Scalable Vector Graphics Animation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="string">
+        <!-- svg is like container which contains path with different points with different shape(curves) -->
+        <svg width="1000" height="200">
+            
+            <!-- path is made up of points -->
+            <!-- here, three points are included in three parts -->
+            <!-- part 1 :- M(move to point - start point) x:10 y:100  -->
+            <!-- part 2 :- Q(quadratic) x:250 y:100  -->
+            <!-- part 3 :- (end point) x:490 y:100  -->
+            <path d="M 10 100 Q 500 100 990 100" stroke="white" fill="transparent"/>
+        </svg>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+</body>
+</html>
